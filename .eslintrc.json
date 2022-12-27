@@ -1,3 +1,6 @@
 {
-  "extends": "next/core-web-vitals"
+	"extends": [
+		"next/babel", //next.config.jsでのエラー回避
+		"next/core-web-vitals"
+	]
 }

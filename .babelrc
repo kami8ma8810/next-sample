@@ -1,0 +1,6 @@
+{
+	"presets": [
+		"next/babel" //next.config.jsでのエラー回避
+	],
+	"plugins": []
+}
