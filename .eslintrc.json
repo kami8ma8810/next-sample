@@ -1,6 +1,18 @@
 {
 	"extends": [
 		"next/babel", //next.config.jsでのエラー回避
-		"next/core-web-vitals"
+		"next/core-web-vitals",
+		"plugin:storybook/recommended"
+	],
+	"overrides": [
+		{
+			"files": [
+				"*.stories.@(ts|tsx|js|jsx|mjs|cjs|mdx)"
+			],
+			"rules": {
+				"storybook/hierarchy-separator": "error",
+				"storybook/default-exports": "off",
+			}
+		}
 	]
 }
